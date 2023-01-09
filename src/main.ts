@@ -1,7 +1,10 @@
-import './style.css'
 import './layouts'
 import { setupExtendDom } from './utils/extend-dom'
+import { setupStyles } from './styles'
 
 setupExtendDom()
+setupStyles()
 
-document.querySelector('#app')!.innerHTML = `<north-header text="hello world"></north-header>`
+document.querySelector('#app')!.innerHTML = `
+    <north-header></north-header>
+`

@@ -1,0 +1,48 @@
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	.flex {
+		display: flex;
+	}
+
+	.items-center {
+		align-items: center;
+	}
+
+	.header {
+		height: 80px;
+		line-height: 80px;
+
+		padding: 0 40px;
+		transition: all 0.3s;
+		box-shadow: 5px 5px 6px #ecf0f1;
+	}
+
+	.header:hover {
+		box-shadow: 5px 5px 6px #dcdddd;
+	}
+
+	.header-image-container {
+		height: 50px;
+		cursor: pointer;
+	}
+
+	.header-title {
+		font-size: 20px;
+		cursor: pointer;
+		margin-left: 10px;
+	}
+</style>
+
+<header class="header flex items-center">
+	<div class="header-image-container">
+		<img src="/src/assets/images/logo.svg" height="50" alt="logo" title="LOGO" />
+	</div>
+	<h1 class="header-title">免费在线录屏工具</h1>
+	<div>
+		<slot name="default"></slot>
+	</div>
+</header>
