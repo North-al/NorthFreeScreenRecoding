@@ -3,8 +3,8 @@ import headerHTML from '../../template/header.html?raw'
 export class NorthHeader extends HTMLElement {
 	constructor() {
 		super()
-		const shadow = this.attachShadow({ mode: 'open' })
 
+		const shadow = this.attachShadow({ mode: 'open' })
 		shadow.innerHTML = headerHTML
 	}
 
