@@ -7,10 +7,14 @@ setupStyles()
 
 document.querySelector('#app')!.innerHTML = `
     <north-header></north-header>
-    <div class="flex-around">
-        <north-main width="200px" height="200px"></north-main>
-        <north-main width="200px" height="200px"></north-main>
-        <north-main width="200px" height="200px"></north-main>
-        <north-main width="200px" height="200px"></north-main>
+    <div class="container">
+        <north-main>
+            <div slot="default">
+                <north-content height="calc(100vh - 450px);"></north-content>
+                <div style="margin-top: 20px">
+                    <north-content height="160px;"></north-content>
+                </div>
+            </div>
+        </north-main> 
     </div>
 `
